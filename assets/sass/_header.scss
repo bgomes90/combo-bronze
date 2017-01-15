@@ -1,0 +1,18 @@
+.header {
+  position:                         fixed;
+  text-transform:                   uppercase;
+  list-style:                       none;
+  right:                            67px;
+  @extend                           %bold;
+  z-index: 999;
+  li {
+    @include                        padding(30px 11px);
+    display:                        inline-block;
+    & .menu-item {
+      color:                        white;
+      &:hover {
+        color:                      $blue;
+      }
+    }
+  }
+}
