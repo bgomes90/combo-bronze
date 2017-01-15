@@ -1,5 +1,16 @@
+// Frameworks
 @import "frameworks/bootstrap";
 
-@import "colors";
+// Mixins
+@import "mixins/mixins";
 
+// Placeholders
+@import "placeholders/placeholders";
+
+// Components
+@import "colors";
 @import "buttons";
+@import "header";
+@import "scaffolds";
+@import "forms";
+@import "general";

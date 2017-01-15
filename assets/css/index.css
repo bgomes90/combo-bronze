@@ -5814,8 +5814,32 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.btn {
-  padding: 10px 20px;
-  border: 1px solid #000;
-  background-color: red;
+.header {
   font-weight: bold; }
+
+.header {
+  position: fixed;
+  text-transform: uppercase;
+  list-style: none;
+  right: 67px;
+  z-index: 999; }
+  .header li {
+    padding: 30px 11px;
+    display: inline-block; }
+    .header li .menu-item {
+      color: white; }
+      .header li .menu-item:hover {
+        color: #00b3e0; }
+
+body,
+html {
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:visited, a:active {
+    text-decoration: none; }
+
+.image-home {
+  width: 100%;
+  height: auto; }
