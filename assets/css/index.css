@@ -5835,10 +5835,11 @@ body,
 html {
   height: 100%; }
 
-a {
+a,
+:hover,
+:visited,
+:active {
   text-decoration: none; }
-  a:hover, a:visited, a:active {
-    text-decoration: none; }
 
 .image-home {
   width: 100%;

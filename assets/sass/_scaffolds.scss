@@ -3,11 +3,9 @@ html {
   height:                          100%;
 }
 
-a {
-  text-decoration:                 none;
-  &:hover,
-  &:visited,
-  &:active {
+a,
+&:hover,
+&:visited,
+&:active {
     text-decoration:               none;
-  }
 }
