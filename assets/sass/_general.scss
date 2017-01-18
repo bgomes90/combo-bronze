@@ -1,5 +1,44 @@
+.container-fluid {
+  padding:                    0px;
+}
+
+.no-padding {
+  @include                    padding(0px);
+}
+
 .image-home {
-  width: 100%;
-  height: auto;
+  width:                      100%;
+  min-height:                 auto;
   // background:url("../assets/img/header-img.png") repeat-x top center;
+}
+
+.about-us {
+  // @include                    padding(64px 140px);
+  @include padding(24px 213px 24px 70px)
+  // background-color: #f1eeef;
+  // background: linear-gradient(45deg, #FFF 1%, #f1eeef 150%);
+}
+
+.row-gray {
+  background-color: #f1eeef;
+}
+
+// .col-phone {
+//   width: 29%;
+//   padding-right: 0px;
+// }
+
+.video {
+  position: relative;
+  z-index: 0;
+}
+
+.play {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  // background-image: url("../img/play.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
 }

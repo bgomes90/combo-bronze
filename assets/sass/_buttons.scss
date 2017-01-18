@@ -1,1 +1,14 @@
+.btn {
+  text-transform:                       uppercase;
+  @include                              padding(7px 27px);
+  border-radius:                        1px;
+}
 
+.btn-outline {
+  // font-family: "MyriadPro-Regular";
+  font-size:                            16px; //18px
+  background-color:                     transparent;
+  border:                               1px solid #1a237e;
+  color:                                #060f40;
+  margin-top:                           17px;
+}

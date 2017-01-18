@@ -4,7 +4,7 @@
   list-style:                       none;
   right:                            67px;
   @extend                           %bold;
-  z-index: 999;
+  z-index:                          999;
   li {
     @include                        padding(30px 11px);
     display:                        inline-block;
