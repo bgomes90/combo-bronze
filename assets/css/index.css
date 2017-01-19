@@ -5817,6 +5817,12 @@ button.close {
 .header {
   font-weight: bold; }
 
+.title-band, .social .social-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 .btn {
   text-transform: uppercase;
   padding: 7px 27px;
@@ -5874,6 +5880,9 @@ a:active {
 .about-us-content {
   color: #7b7880; }
 
+.title-band {
+  bottom: 45px; }
+
 .container-fluid {
   padding: 0px; }
 
@@ -5897,5 +5906,25 @@ a:active {
 .play {
   position: absolute;
   z-index: 20;
-  top: 0;
-  left: 0; }
+  top: 37%;
+  left: 45%; }
+
+.social {
+  text-align: center;
+  height: 160px;
+  background: #efefed;
+  position: relative; }
+  .social .social-line {
+    display: inline-block;
+    list-style: none; }
+    .social .social-line .social-item {
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      border: 1px solid black; }
+      .social .social-line .social-item:first-child .social-img {
+        margin-top: 16%; }
+      .social .social-line .social-item:nth-child(2) .social-img,
+      .social .social-line .social-item:last-child .social-img {
+        margin-top: 23%; }

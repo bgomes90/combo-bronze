@@ -36,9 +36,32 @@
 .play {
   position: absolute;
   z-index: 20;
-  top: 0;
-  left: 0;
-  // background-image: url("../img/play.png");
-  // background-repeat: no-repeat;
-  // background-position: center;
+  top: 37%;
+  left: 45%;
+}
+
+.social {
+  text-align: center;
+  height: 160px;
+  background: $silver;
+  position: relative;
+  .social-line {
+    @extend %absolute-center;
+    display: inline-block;
+    list-style: none;
+    .social-item {
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      border: 1px solid black;
+      &:first-child .social-img {
+        margin-top: 16%;
+      }
+      &:nth-child(2) .social-img,
+      &:last-child .social-img {
+        margin-top: 23%;
+      }
+    }
+  }
 }

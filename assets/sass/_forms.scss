@@ -10,3 +10,8 @@
   // font-family: "Roboto-Light";
   color:                            #7b7880;
 }
+
+.title-band {
+  @extend %absolute-center;
+  bottom: 45px;
+}
