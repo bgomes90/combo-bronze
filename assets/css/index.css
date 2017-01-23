@@ -5817,23 +5817,36 @@ button.close {
 .header {
   font-weight: bold; }
 
-.title-band, .social .social-line {
+.btn-white, .footer .img-combo {
+  margin: 0 auto;
+  display: block; }
+
+.title-band, .social .social-line, .social .h-rule {
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0; }
 
 .btn {
+  font-family: "MyriadPro-Regular";
+  font-size: 1.1em;
   text-transform: uppercase;
+  background-color: transparent;
   padding: 7px 27px;
   border-radius: 1px; }
 
 .btn-outline {
-  font-size: 16px;
-  background-color: transparent;
   border: 1px solid #1a237e;
   color: #060f40;
   margin-top: 17px; }
+
+.btn-white {
+  border: 1px solid #f4f4f4;
+  color: #f4f4f4;
+  width: 190px; }
+  .btn-white:hover, .btn-white:active {
+    background: #f4f4f4;
+    color: #1f2533; }
 
 .header {
   position: fixed;
@@ -5871,17 +5884,105 @@ a:visited,
 a:active {
   text-decoration: none; }
 
+#tour,
+#home,
+#our-music,
+#partner {
+  position: relative; }
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../fonts/MyriadPro/MYRIADPRO-REGULAR.OTF") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/roboto/Roboto-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype"); }
+
+.footer {
+  height: 200px;
+  background-color: #000; }
+  .footer .img-combo {
+    padding: 23px 0px 0px; }
+  .footer .copyright {
+    font-family: "Roboto-Thin";
+    color: #f4f4f4;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0; }
+
 .about-us-title {
+  font-family: "MyriadPro-Regular";
   font-size: 20px;
   color: #413d4b;
   letter-spacing: 3px;
   margin-bottom: 20px; }
 
 .about-us-content {
+  font-family: "Roboto-Light";
   color: #7b7880; }
 
 .title-band {
   bottom: 45px; }
+
+.members-name {
+  list-style: none;
+  position: absolute;
+  margin-left: 80px;
+  z-index: 20; }
+  .members-name .member-item {
+    display: inline-block;
+    width: 230px;
+    font-size: 22px;
+    font-family: "MyriadPro-Regular";
+    padding: 14px;
+    margin: 13px 35px;
+    text-align: center;
+    border: 1px solid #000;
+    -webkit-box-shadow: 0 0 1px 0 #000;
+    box-shadow: 0 0 1px 0 #000; }
+
+.header-tour {
+  color: #f4f4f4;
+  text-align: center;
+  margin-top: 65px;
+  z-index: 20; }
+
+.data-tour {
+  color: #1f2533; }
+  .data-tour h4 {
+    font-size: 2em; }
+  .data-tour h1 {
+    font-size: 7em; }
+  .data-tour h3 {
+    font-size: 2.3em; }
+
+.local-tour p:first-child {
+  font-family: "Roboto-Black";
+  color: #f4f4f4; }
+
+.local-tour p:last-child {
+  font-family: "Roboto-Light";
+  color: #979c9f;
+  font-size: 0.9em; }
+
+.title-pb {
+  position: absolute;
+  z-index: 20;
+  top: 20%;
+  left: 20%;
+  font-size: 8em;
+  color: #f4f4f4;
+  font-family: "Roboto-Thin";
+  letter-spacing: 10px; }
 
 .container-fluid {
   padding: 0px; }
@@ -5889,9 +5990,26 @@ a:active {
 .no-padding {
   padding: 0px; }
 
-.image-home {
+.no-margin, .data-tour h4, .data-tour h1, .data-tour h3 {
+  margin: 0px; }
+
+.margin-t60 {
+  margin-top: 60px; }
+
+.margin-t80 {
+  margin-top: 80px; }
+
+.margin-b60 {
+  margin-bottom: 60px; }
+
+.image-home, .image-tour {
   width: 100%;
-  min-height: auto; }
+  min-height: auto;
+  position: relative; }
+
+.image-tour {
+  position: absolute;
+  z-index: 0; }
 
 .about-us {
   padding: 24px 213px 24px 70px; }
@@ -5922,9 +6040,29 @@ a:active {
       width: 31px;
       height: 31px;
       border-radius: 50%;
-      border: 1px solid black; }
+      border: 2px solid black; }
       .social .social-line .social-item:first-child .social-img {
         margin-top: 16%; }
       .social .social-line .social-item:nth-child(2) .social-img,
       .social .social-line .social-item:last-child .social-img {
         margin-top: 23%; }
+  .social .h-rule {
+    width: 50px;
+    border-top: 2px solid #7b7880;
+    margin-bottom: 0px; }
+
+.item-tour {
+  height: 308px;
+  text-align: center; }
+  .item-tour .data-tour {
+    height: 229px;
+    background: #f4f4f4;
+    padding: 30px 0px; }
+  .item-tour .local-tour {
+    height: 79px;
+    border: 1px solid #979c9f;
+    padding: 14px 0px; }
+
+.img-band {
+  width: 100%;
+  height: 150px; }

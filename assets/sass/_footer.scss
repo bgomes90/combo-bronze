@@ -1,0 +1,16 @@
+.footer {
+  height: 200px;
+  background-color: #000;
+  .img-combo {
+    @extend %center;
+    @include padding(23px 0px 0px);
+  }
+  .copyright {
+    font-family: "Roboto-Thin";
+    color: $snow;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+  }
+}

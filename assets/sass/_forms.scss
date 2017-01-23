@@ -1,5 +1,5 @@
 .about-us-title {
-  // font-family: "MyriadPro-Regular";
+  font-family: "MyriadPro-Regular";
   font-size:                        20px; //22px
   color:                            #413d4b;
   letter-spacing:                   3px;
@@ -7,11 +7,79 @@
 }
 
 .about-us-content {
-  // font-family: "Roboto-Light";
+  font-family: "Roboto-Light";
   color:                            #7b7880;
 }
 
 .title-band {
   @extend %absolute-center;
   bottom: 45px;
+}
+
+.members-name {
+  list-style: none;
+  position: absolute;
+  margin-left: 80px;
+  z-index: 20;
+  .member-item {
+    display: inline-block;
+    width: 230px;
+    font-size: 22px;
+    font-family: "MyriadPro-Regular";
+    @include padding(14px);
+    margin: 13px 35px;
+    text-align: center;
+    border: 1px solid #000;
+    -webkit-box-shadow: 0 0 1px 0 #000;
+    box-shadow: 0 0 1px 0 #000;
+  }
+}
+
+.header-tour {
+  // position: absolute;
+  // left: 40%;
+  // top: 20px;
+  color: $snow;
+  text-align: center;
+  margin-top: 65px;
+  z-index: 20;
+}
+
+.data-tour {
+  color: $dark-asphalt;
+  h4 {
+    font-size: 2em;
+    @extend .no-margin;
+  }
+  h1 {
+    font-size: 7em;
+    @extend .no-margin;
+  }
+  h3 {
+    font-size: 2.3em;
+    @extend .no-margin;
+  }
+}
+
+.local-tour {
+  p:first-child {
+    font-family: "Roboto-Black";
+    color: $snow;
+  }
+  p:last-child {
+    font-family: "Roboto-Light";
+    color: #979c9f;
+    font-size: 0.9em;
+  }
+}
+
+.title-pb {
+  position: absolute;
+  z-index: 20;
+  top: 20%;
+  left: 20%;
+  font-size: 8em;
+  color: $snow;
+  font-family: "Roboto-Thin";
+  letter-spacing: 10px;
 }
