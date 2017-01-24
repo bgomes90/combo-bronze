@@ -1,0 +1,206 @@
+http://stackoverflow.com/questions/41118279/bootstrap-testimonial-carousel
+
+$(document).ready(function() {
+  var flag = false;
+  $("#quote-carousel").on('slide.bs.carousel', function() {
+    if (!flag) {
+      var arr = $('ol.carousel-indicators > li');
+      $($('ol.carousel-indicators')).append($('ol.carousel-indicators > li')[0]);
+      $('.carousel-inner').append($('.carousel-inner > .item')[0]);
+    } else {
+      flag = false;
+    }
+  });
+
+  $('#quote-carousel').carousel();
+
+  $('.item-btn').click(function(obj) {
+    flag = true;
+    var arr = $('.item-btn');
+    var index = arr.index(obj.currentTarget);
+    var len = arr.length;
+    var mid = Math.floor(len / 2);
+    $('#quote-carousel').carousel(index);
+    if (index < mid) {
+      for (i = 0; i < (mid - index); i++) {
+        $($('ol.carousel-indicators')).prepend($('.item-btn')[len - 1]);
+        $('.carousel-inner').prepend($('.item')[len - 1]);
+      }
+    } else if (index > mid) {
+      for (i = 0; i < (index - mid); i++) {
+        $($('ol.carousel-indicators')).append($('.item-btn')[0]);
+        $('.carousel-inner').append($('.item')[0]);
+      }
+    }
+  });
+
+  $(".left").click(function() {
+    flag = true;
+    var arr = $('ol.carousel-indicators > li');
+    $($('ol.carousel-indicators')).prepend(arr[arr.length - 1]);
+    arr = $('.carousel-inner > .item');
+    $('.carousel-inner').prepend(arr[arr.length - 1]);
+    $("#quote-carousel").carousel("prev");
+  });
+  $(".right").click(function() {
+    flag = true;
+    var arr = $('ol.carousel-indicators > li');
+    $($('ol.carousel-indicators')).append(arr[0]);
+    arr = $('.carousel-inner > .item');
+    $('.carousel-inner').append(arr[0]);
+    $("#quote-carousel").carousel("next");
+  });
+});
+
+
+
+/* Carousel */
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  /* Control buttons  */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the color of the indicators */
+}
+
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+#quote-carousel .carousel-control.left {
+  left: -60px;
+}
+
+#quote-carousel .carousel-control.right {
+  right: -60px;
+}
+
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  border: 4px solid #CCC;
+  border-radius: 50px;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.4s;
+  margin-bottom: 45px;
+}
+
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+  width: 128px;
+  height: 128px;
+  border-radius: 100px;
+  border-color: #f33;
+  opacity: 1;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.carousel-inner {
+  min-height: 300px;
+  margin-bottom: 50px;
+}
+
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" data-wow-delay="0.2s">
+      <div class="carousel slide" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li class="item-btn"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+          </li>
+          <li class="item-btn active"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
+          </li>
+          <li class="item-btn"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
+          </li>
+        </ol>
+
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner text-center">
+
+          <!-- Quote 1 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Carousel Buttons Next/Prev -->
+        <a href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

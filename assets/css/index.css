@@ -5875,6 +5875,7 @@ html {
   height: 100%; }
 
 body {
+  width: 100%;
   -ms-overflow-x: hidden;
   overflow-x: hidden; }
 
@@ -5887,7 +5888,8 @@ a:active {
 #tour,
 #home,
 #our-music,
-#partner {
+#partner,
+#partner-testimonial {
   position: relative; }
 
 @font-face {
@@ -5984,6 +5986,22 @@ a:active {
   font-family: "Roboto-Thin";
   letter-spacing: 10px; }
 
+.testimonial-content {
+  text-align: center;
+  color: #f4f4f4;
+  margin: 0 auto;
+  width: 50%; }
+
+.testimonial-author {
+  text-transform: uppercase;
+  font-family: "Roboto-Black"; }
+
+.testimonial-author-place {
+  text-transform: uppercase;
+  color: #979c9f;
+  font-size: 0.9em;
+  font-family: "Roboto-Light"; }
+
 .container-fluid {
   padding: 0px; }
 
@@ -6066,3 +6084,8 @@ a:active {
 .img-band {
   width: 100%;
   height: 150px; }
+
+.testimonial-box {
+  position: absolute;
+  top: 25%;
+  z-index: 20; }

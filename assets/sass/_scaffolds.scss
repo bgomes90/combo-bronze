@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  width: 100%;
   -ms-overflow-x:                     hidden;
   overflow-x:                         hidden;
 }
@@ -28,6 +29,7 @@ a:active {
 #tour,
 #home,
 #our-music,
-#partner {
+#partner,
+#partner-testimonial {
   position: relative;
 }

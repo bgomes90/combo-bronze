@@ -83,3 +83,22 @@
   font-family: "Roboto-Thin";
   letter-spacing: 10px;
 }
+
+.testimonial-content {
+  text-align: center;
+  color: $snow;
+  margin: 0 auto;
+  width: 50%
+}
+
+.testimonial-author {
+  text-transform: uppercase;
+  font-family: "Roboto-Black";
+}
+
+.testimonial-author-place {
+  text-transform: uppercase;
+  color: #979c9f;
+  font-size: 0.9em;
+  font-family: "Roboto-Light";
+}
