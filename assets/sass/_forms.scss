@@ -74,7 +74,7 @@
 .data-tour {
   color: $dark-asphalt;
   h4 {
-    font-size: 2em;
+    font-size: 2vw;
     @extend .no-margin;
   }
   h1 {
@@ -82,7 +82,8 @@
     @extend .no-margin;
   }
   h3 {
-    font-size: 2.3em;
+    // font-size: 2.3em;
+    font-size: 2.3vw;
     @extend .no-margin;
   }
 }

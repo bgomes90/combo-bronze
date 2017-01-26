@@ -38,6 +38,19 @@
   // z-index: 0;
 }
 
+.tour {
+  background-image:url("../img/img-tour.png");
+  width: 100%;
+  height: 662px;
+}
+
+.partner-testimonial {
+  background-image:url("../img/img-depoiment.png");
+  width: 100%;
+  height: 431px;
+  position: relative;
+}
+
 .image-tour {
   @extend .image-home;
   position: absolute;
@@ -46,7 +59,7 @@
 
 .about-us {
   // @include                    padding(64px 140px);
-  @include padding(24px 200px 24px 70px)
+  @include padding(24px 200px 24px 70px);
   // background-color: #f1eeef;
   // background: linear-gradient(45deg, #FFF 1%, #f1eeef 150%);
 }
@@ -125,7 +138,5 @@
 }
 
 .testimonial-box {
-  position: absolute;
-  top: 25%;
-  z-index: 20;
+  padding-top: 100px;
 }
