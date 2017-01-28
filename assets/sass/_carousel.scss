@@ -1,0 +1,100 @@
+#quote-carousel {
+  // padding:                                0 10px 30px 10px;
+  margin-top:                             25px;
+  /* Control buttons  */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the color of the indicators */
+}
+
+#quote-carousel .carousel-control {
+  // background:                             none;
+  color:                                  white;
+  // font-size:                              2.3em;
+  // text-shadow:                            none;
+  // opacity: 0;
+  margin-top:                             30px;
+  &:hover {
+    color: white;
+    background: none;
+     text-shadow:                            none;
+  }
+}
+
+#quote-carousel .carousel-control.left {
+  // left:                                   -60px;
+}
+
+#quote-carousel .carousel-control.right {
+  // right:                                  -60px;
+}
+
+#quote-carousel .carousel-indicators {
+  right:                                  50%;
+  top:                                    auto;
+  bottom:                                 -40px;
+  margin-right:                           -19px;
+}
+
+#quote-carousel .carousel-indicators li {
+  width:                                  45px;
+  height:                                 45px;
+  margin:                                 5px;
+  cursor:                                 pointer;
+  // border:                                 4px solid #CCC;
+  border-radius:                          50%;
+  // opacity:                                0.4;
+  overflow:                               hidden;
+  transition:                             all 0.4s;
+  margin-bottom:                          45px;
+}
+
+#quote-carousel .carousel-indicators .active {
+  // background:                             #333333;
+  width:                                  70px;
+  height:                                 70px;
+  border-radius:                          50%;
+  // border-color:                           #f33;
+  opacity:                                1;
+  overflow:                               hidden;
+  margin-bottom:                          32px;
+}
+
+.img-responsive {
+  width:                                  100%;
+  height:                                 100%;
+}
+
+.carousel-inner {
+  min-height:                             300px;
+  margin-bottom:                          50px;
+}
+
+blockquote {
+  border-left:                            none;
+  margin:                                 0;
+  font-size:                              1em;
+}
+
+.carousel-control.right {
+  left: auto;
+  right: 29%;
+}
+
+.carousel-control.left {
+  right: auto;
+  left: 29%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  top: 72%;
+  background-image:none !important;
+  filter:none !important;
+  z-index: 999;
+}
+
+.icon-inverted-commas {
+  margin: 40px auto 0px;
+  display: block;
+}
