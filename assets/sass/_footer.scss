@@ -1,9 +1,9 @@
 .footer {
-  height: 200px;
+  height: 225px;
   background-color: #000;
   .img-combo {
     @extend %center;
-    @include padding(23px 0px 0px);
+    @include padding(12px 0px 0px);
   }
   .copyright {
     font-family: "Roboto-Thin";
@@ -11,6 +11,23 @@
     margin-bottom: 0px;
     position: absolute;
     bottom: 0px;
-    right: 0;
   }
+}
+
+@media (min-width: 320px) {
+  .copyright {
+    position: relative !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 660px) {
+  .copyright {
+    position: absolute !important;
+    right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  right: 0;
 }

@@ -7,37 +7,64 @@
   <title>Combo Music</title>
   <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="assets/css/materialize.min.css"> -->
-  <link rel="stylesheet" href="assets/css/index.css">
-  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/index.css"> -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
 
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
   <header>
-    <ul class="header">
-      <li>
-        <a class="menu-item" href="#home">home</a>
+    <ul class="header menu-responsive" id="menu-responsive">
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li role="presentation">
+            <a class="menu-item active" href="#home">home</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#about">sobre</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#our-music">nossa música</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#band">a banda</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#tour">agenda</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#partner-testimonial">parceiros</a>
+          </li>
+        </ul>
       </li>
-      <li>
+    </ul>
+    <ul class="header menu-bar" id="menu-bar">
+      <li role="presentation">
+        <a class="menu-item active" href="#home">home</a>
+      </li>
+      <li role="presentation">
         <a class="menu-item" href="#about">sobre</a>
       </li>
-      <li>
+      <li role="presentation">
         <a class="menu-item" href="#our-music">nossa música</a>
       </li>
-      <li>
+      <li role="presentation">
         <a class="menu-item" href="#band">a banda</a>
       </li>
       <li>
         <a class="menu-item" href="#tour">agenda</a>
       </li>
-      <li>
-        <a class="menu-item" href="#partner">parceiros</a>
+      <li role="presentation">
+        <a class="menu-item" href="#partner-testimonial">parceiros</a>
       </li>
     </ul>
   </header>
 
 
-  <section id="home">
+  <section id="home" class="home">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -48,11 +75,11 @@
   </section>
 
   <section id="about">
-    <div class="row row-gray">
-      <div class="col-sm-4 col-md-4 no=padding">
-        <img class="" src="assets/img/phone.png" alt="">
+    <div class="row row-gray row-fix">
+      <div class="col-sm-6 col-md-4 no-padding">
+        <img class="image-home" src="assets/img/phone.png" alt="">
       </div>
-      <div class="col-sm-8 col-md-8 no-padding">
+      <div class="col-sm-6 col-md-8">
         <div class="about-us">
           <h4 class="about-us-title">SOBRE NÓS</h4>
           <p class="about-us-content">
@@ -74,8 +101,8 @@
   </section>
 
   <section id="band" style="height: auto; width: 100%">
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="row row-fix">
+      <div class="col-xs-12 no-padding">
         <div class="social">
           <h4 class="title-band">A BANDA</h4>
           <ul class="social-line no-padding">
@@ -104,10 +131,18 @@
       <div class="container">
         <div class="col-md-12">
           <ul class="members-name">
-            <li class="member-item">João</li>
-            <li class="member-item">Paulo</li>
-            <li class="member-item">Jorge</li>
-            <li class="member-item">Ringão</li>
+            <li class="member-item">
+              <a href="#">João</a>
+            </li>
+            <li class="member-item">
+              <a href="#">Paulo</a>
+            </li>
+            <li class="member-item">
+              <a href="#">Jorge</a>
+            </li>
+            <li class="member-item">
+              <a href="#">Ringão</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -118,8 +153,8 @@
   <section id="tour" class="tour">
     <!-- <img class="image-tour" src="assets/img/img-tour.png" alt=""> -->
 
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="row row-fix">
+      <div class="col-xs-12 no-padding">
         <div class="header-tour">
           <h4>VEM PRA ESTRADA COM A GENTE</h4>
           <p>CONFIRA AS PRÓXIMAS DATAS DA BANDA</p>
@@ -127,10 +162,10 @@
 
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-offset-2 col-md-8">
-        <div class="row margin-t60">
-          <div class="col-sm-6 col-md-3">
+    <div class="row row-fix">
+      <div class="col-md-offset-2 col-md-8 no-padding">
+        <div class="row row-fix margin-t60-15">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-tour">
             <div class="item-tour">
               <div class="data-tour">
                 <h4>SÁBADO</h4>
@@ -143,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-tour">
             <div class="item-tour">
               <div class="data-tour">
                 <h4>SEXTA</h4>
@@ -156,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-tour">
             <div class="item-tour">
               <div class="data-tour">
                 <h4>QUINTA</h4>
@@ -169,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-tour">
             <div class="item-tour">
               <div class="data-tour">
                 <h4>SEXTA</h4>
@@ -187,52 +222,52 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a class="btn btn-white margin-t80" href="#">
+        <a class="btn btn-white margin-t80-30" href="#">
           agenda completa
         </a>
       </div>
     </div>
   </section>
 
-    <section id="partner" class="partner" style="min-height: 300px">
+    <section id="partner" class="partner">
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #b6b6b6">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #acacac">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #a1a1a1">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #8a8a8a">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #b6b6b6">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #acacac">
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #a1a1a1">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #8a8a8a">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #b6b6b6">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #acacac">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #a1a1a1">
           </div>
-          <div class="col-sm-4 col-md-2 no-padding">
+          <div class="col-xs-6 col-sm-4 col-md-2 no-padding">
             <img class="img-band" src="" alt="" style="background-color: #8a8a8a">
           </div>
         </div>
@@ -243,8 +278,8 @@
     </section>
 
     <section id="partner-testimonial" class="partner-testimonial">
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="row row-fix">
+        <div class="col-xs-12 no-padding">
           <img class="icon-inverted-commas" src="assets/img/icon-inverted-commas.png" alt="">
           <div class="carousel slide" id="quote-carousel">
             <ol class="carousel-indicators">
@@ -288,12 +323,12 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <div class="testimonial-content">
-                        <p class="testimonial-text margin-b30">
+                        <p class="testimonial-text margin-b30-10">
                           Lorem ipsum dolor sit amet, usu aeque soluta intellegebat te, ancillae epicurei eu cum. Et tibique dolores pri. Quaeque recusabo te quo, mundi aperiri iracundia et eam, corpora consequat vulputate te sea. Porro melius ullamcorper qui te, delenit ocurreret adipiscing et mea, prodesset definitionem has eu. Petentium principes mediocritatem vix eu, quo et salutandi euripidis concludaturque.
                           Eius nobis prodesset usu an, his quas impedit maluisset id. Diam causae periculis te vim, eum u
                         </p>
                         <p class="testimonial-author">ricardo mib</p>
-                        <p class="testimonial-author-place margin-b30">joe collins</p>
+                        <p class="testimonial-author-place margin-b30-10">joe collins</p>
                       </div>
                     </div>
                   </div>
@@ -305,12 +340,12 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <div class="testimonial-content">
-                        <p class="testimonial-text margin-b30">
+                        <p class="testimonial-text margin-b30-10">
                           Lorem ipsum dolor sit amet, usu aeque soluta intellegebat te, ancillae epicurei eu cum. Et tibique dolores pri. Quaeque recusabo te quo, mundi aperiri iracundia et eam, corpora consequat vulputate te sea. Porro melius ullamcorper qui te, delenit ocurreret adipiscing et mea, prodesset definitionem has eu. Petentium principes mediocritatem vix eu, quo et salutandi euripidis concludaturque.
                           Eius nobis prodesset usu an, his quas impedit maluisset id. Diam causae periculis te vim, eum u
                         </p>
                         <p class="testimonial-author">ricardo mib</p>
-                        <p class="testimonial-author-place margin-b30">joe collins</p>
+                        <p class="testimonial-author-place margin-b30-10">joe collins</p>
                       </div>
                     </div>
                   </div>
@@ -322,12 +357,12 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <div class="testimonial-content">
-                        <p class="testimonial-text margin-b30">
+                        <p class="testimonial-text margin-b30-10">
                           Lorem ipsum dolor sit amet, usu aeque soluta intellegebat te, ancillae epicurei eu cum. Et tibique dolores pri. Quaeque recusabo te quo, mundi aperiri iracundia et eam, corpora consequat vulputate te sea. Porro melius ullamcorper qui te, delenit ocurreret adipiscing et mea, prodesset definitionem has eu. Petentium principes mediocritatem vix eu, quo et salutandi euripidis concludaturque.
                           Eius nobis prodesset usu an, his quas impedit maluisset id. Diam causae periculis te vim, eum u
                         </p>
                         <p class="testimonial-author">ricardo mib</p>
-                        <p class="testimonial-author-place margin-b30">joe collins</p>
+                        <p class="testimonial-author-place margin-b30-10">joe collins</p>
                       </div>
                     </div>
                   </div>
@@ -339,12 +374,12 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <div class="testimonial-content">
-                        <p class="testimonial-text margin-b30">
+                        <p class="testimonial-text margin-b30-10">
                           Lorem ipsum dolor sit amet, usu aeque soluta intellegebat te, ancillae epicurei eu cum. Et tibique dolores pri. Quaeque recusabo te quo, mundi aperiri iracundia et eam, corpora consequat vulputate te sea. Porro melius ullamcorper qui te, delenit ocurreret adipiscing et mea, prodesset definitionem has eu. Petentium principes mediocritatem vix eu, quo et salutandi euripidis concludaturque.
                           Eius nobis prodesset usu an, his quas impedit maluisset id. Diam causae periculis te vim, eum u
                         </p>
                         <p class="testimonial-author">ricardo mib</p>
-                        <p class="testimonial-author-place margin-b30">joe collins</p>
+                        <p class="testimonial-author-place margin-b30-10">joe collins</p>
                       </div>
                     </div>
                   </div>
@@ -372,9 +407,9 @@
 
   <footer class="footer no-padding">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <img class="img-combo" src="assets/img/combo.png" alt="">
+      <div class="row row-fix">
+        <div class="col-xs-12 no-padding">
+          <img class="img-combo" src="assets/img/img-combo.png" alt="">
           <p class="copyright">Copyright Combo Music &copy;</p>
         </div>
       </div>
@@ -384,6 +419,7 @@
   <script src="assets/js/libs/jquery-2.1.4.min.js"></script>
   <script src="assets/js/libs/bootstrap.min.js"></script>
   <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/app.js"></script>
   <!-- <script src="assets/js/libs/materialize.min.js"></script> -->
 </body>
 </html>
