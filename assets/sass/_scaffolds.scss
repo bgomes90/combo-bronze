@@ -8,14 +8,15 @@ html {
   box-sizing:                         border-box;
 }
 
-body {
+body,
+html {
   height:                             100%;
+  -ms-overflow-x:                     hidden;
+  overflow-x:                         hidden;
 }
 
 body {
   width: 100%;
-  -ms-overflow-x:                     hidden;
-  overflow-x:                         hidden;
 }
 
 a,

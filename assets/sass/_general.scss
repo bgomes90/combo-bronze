@@ -88,6 +88,21 @@
       height: 31px;
       border-radius: 50%;
       border: 2px solid black;
+      // &:hover:first-child {
+      //   background-color: #3b5998;
+      //   fill: #FFF;
+      // }
+      // &:hover:nth-child(2) {
+      //   background-color: #c536a4;
+      //   fill: #FFF;
+      // }
+      // &:hover:last-child {
+      //   background-color: #e62117;
+      //   fill: #FFF;
+      // }
+      & .social-img {
+        width: 15px;
+      }
       &:first-child .social-img {
         margin-top: 16%;
       }
@@ -103,11 +118,6 @@
     @extend %absolute-center;
     margin-bottom: 0px;
   }
-}
-
-.img-band {
-  width: 100%;
-  height: 150px;
 }
 
 .item-tour {
@@ -146,7 +156,7 @@
     background-repeat:              no-repeat;
   }
   .partner {
-    height:                         900px;
+    height:                         660px;
   }
   .play {
     top:                            13%;
@@ -173,6 +183,10 @@
       @include                      padding(14px 0px);
     }
   }
+  .img-band {
+    width:                          100%;
+    height:                         110px;
+  }
 }
 
 @media (min-width: 480px) {
@@ -190,6 +204,13 @@
     .data-tour {
       height:                       160px;
     }
+  }
+  .partner {
+    height:                         960px;
+  }
+  .img-band {
+    width:                          100%;
+    height:                         160px;
   }
 }
 
@@ -219,6 +240,13 @@
       height:                       170px;
     }
   }
+  .partner {
+    height:                         1320px;
+  }
+  .img-band {
+    width:                          100%;
+    height:                         220px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -226,13 +254,17 @@
     top:                            33%;
     left:                           47%;
   }
-  .partner {
-    height:                         600px;
-  }
   .item-tour {
     .data-tour {
       @include                      padding(5px 0px);
     }
+  }
+  .partner {
+    height:                         680px;
+  }
+  .img-band {
+    width:                          100%;
+    height:                         170px;
   }
 }
 
@@ -262,9 +294,6 @@
   .tour {
     background-image:url("../img/img-tour.png");
   }
-  .partner {
-    height: 300px;
-  }
   .play {
     top: 35%;
     left: 44%;
@@ -287,10 +316,23 @@
       @include padding(14px 0px);
     }
   }
+  .partner {
+    height:                         220px;
+  }
+  .img-band {
+    width:                          100%;
+    height:                         110px;
+  }
 }
 
 @media (min-width: 1200px) {
-
+  .home {
+    background-image:url("../img/header-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 662px;
+  }
   .play {
     left: 46%;
   }
@@ -299,5 +341,12 @@
   }
   .about-us {
     @include padding(24px 200px 24px 70px);
+  }
+  .partner {
+    height: 300px;
+  }
+  .img-band {
+    width: 100%;
+    height: 150px;
   }
 }

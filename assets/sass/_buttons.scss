@@ -5,6 +5,11 @@
   background-color:                     transparent;
   @include                              padding(7px 27px);
   border-radius:                        1px;
+  &:hover,
+  &:active,
+  &:focus {
+    transition:                           0.3s;
+  }
 }
 
 .btn-outline {
@@ -14,6 +19,7 @@
   &:hover,
   &:active,
   &:focus {
+    transition:                           0.3s;
     background:                         #1a237e;
     color:                              $snow;
   }
@@ -26,6 +32,7 @@
   @extend                               %center;
   &:hover,
   &:active {
+    transition:                           0.3s;
     background:                         $snow;
     color:                              $dark-asphalt;
   }
