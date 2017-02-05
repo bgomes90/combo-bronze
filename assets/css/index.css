@@ -5814,7 +5814,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.header-box .header {
+.header {
   font-weight: bold; }
 
 .btn-white, .footer .img-combo {
@@ -6203,7 +6203,7 @@ button.close {
 @media (min-width: 1200px) {
   .title-header {
     font-size: 8.9vw;
-    margin-top: 25%; } }
+    margin-top: 20%; } }
 
 .container-fluid {
   padding: 0px; }
@@ -6445,22 +6445,37 @@ button.close {
     width: 100%;
     height: 150px; } }
 
-.header-box .header {
+@media (min-width: 1400px) {
+  .home,
+  .home .carousel.slide,
+  .home .carousel-inner img {
+    width: 100%;
+    height: auto; }
+  .tour {
+    background-image: url("../img/img-tour.png");
+    width: 100%;
+    height: auto; }
+  .partner-testimonial {
+    width: 100%;
+    height: auto; } }
+
+.header {
   position: fixed;
   z-index: 999;
   right: 50px;
   background-color: transparent;
   text-transform: uppercase;
-  list-style: none; }
-  .header-box .header li {
+  list-style: none;
+  display: inline-block; }
+  .header li {
     padding: 30px 11px;
     display: inline-block; }
-    .header-box .header li .menu-item {
+    .header li .menu-item {
       color: white; }
-      .header-box .header li .menu-item:hover, .header-box .header li .menu-item:active, .header-box .header li .menu-item.active {
+      .header li .menu-item:hover, .header li .menu-item:active, .header li .menu-item.active {
         color: #00b3e0;
         text-decoration: none; }
-  .header-box .header .glyphicon {
+  .header .glyphicon {
     color: white;
     font-size: 1.5em;
     margin-left: 30px; }
@@ -6512,7 +6527,7 @@ a:active {
 
 #tour,
 #home,
-#our-music,
-#partner,
+.our-music,
+.partner,
 #partner-testimonial {
   position: relative; }

@@ -358,3 +358,21 @@
     height: 150px;
   }
 }
+
+@media (min-width: 1400px) {
+  .home,
+  .home .carousel.slide,
+  .home .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+.tour {
+    background-image:url("../img/img-tour.png");
+    width: 100%;
+    height: auto;
+  }
+  .partner-testimonial {
+    width: 100%;
+    height: auto;
+  }
+}
