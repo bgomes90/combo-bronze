@@ -46,10 +46,10 @@ $(document).ready(function(){
 
   $(document).on("scroll", onScroll);
   //smoothscroll
-  $('a[href^="#"]').on('click', function (e) {
+  $('#menu-bar li a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
-    $('a').each(function () {
+    $('#menu-bar a').each(function () {
       $(this).removeClass('active');
     })
     $(this).addClass('active');

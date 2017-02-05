@@ -51,27 +51,27 @@
   margin-bottom:                          32px;
 }
 
-.img-responsive {
+#quote-carousel .img-responsive {
   width:                                  100%;
   height:                                 100%;
 }
 
-blockquote {
+#quote-carousel blockquote {
   border-left:                            none;
   margin:                                 0;
   font-size:                              1em;
 }
 
-.carousel-control.right {
+#quote-carousel .carousel-control.right {
   left: auto;
 }
 
-.carousel-control.left {
+#quote-carousel .carousel-control.left {
   right: auto;
   left: 29%;
 }
 
-.carousel-control.left, .carousel-control.right {
+#quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
   top: 72%;
   background-image:none !important;
   filter:none !important;
@@ -83,7 +83,7 @@ blockquote {
   display: block;
 }
 
-.testimonial-content {
+#quote-carousel .testimonial-content {
   font-family:                      "Britannic-Bold";
   text-align:                       center;
   color:                            $snow;
@@ -91,20 +91,30 @@ blockquote {
   width:                            80%
 }
 
-.testimonial-author {
+#quote-carousel .testimonial-author {
   text-transform:                   uppercase;
   font-family:                      "Roboto-Black";
 }
 
-.testimonial-author-place {
+#quote-carousel .testimonial-author-place {
   text-transform:                   uppercase;
   color:                            #979c9f;
   font-size:                        0.9em;
   font-family:                      "Roboto-Light";
 }
 
+#quote-carousel .carousel-inner .item,
+#quote-carousel .carousel-inner .item img {
+  // width: 2560px;
+  // height: 1440px;
+  // width: auto;
+  // height: auto;
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 320px) {
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height:                             300px;
     margin-bottom:                          50px;
   }
@@ -117,26 +127,26 @@ blockquote {
   .icon-inverted-commas {
     margin: 10px auto 0px;
   }
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size: 0.8em;
   }
-  .carousel-indicators {
+  #quote-carousel .carousel-indicators {
     left: 30%;
     width: 100%;
   }
   #quote-carousel .carousel-indicators {
     bottom:                                 -100px;
   }
-  .carousel-control.left {
+  #quote-carousel .carousel-control.left {
     left: 5%;
   }
-  .carousel-control.right {
+  #quote-carousel .carousel-control.right {
     right: 5%;
   }
 }
 
 @media (min-width: 480px) {
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height:                             250px;
     margin-bottom:                          50px;
   }
@@ -146,13 +156,13 @@ blockquote {
   .icon-inverted-commas {
     margin:                                 30px auto 20px;
   }
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size:                              0.9em;
   }
 }
 
 @media (min-width: 660px) {
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size:                              1em;
   }
 }
@@ -161,7 +171,7 @@ blockquote {
   #quote-carousel .carousel-control {
     margin-top:                             80px;
   }
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height:                             275px;
   }
 }
@@ -176,32 +186,32 @@ blockquote {
   .icon-inverted-commas {
     margin: 40px auto 0px;
   }
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size: 1em;
   }
-  .carousel-indicators {
+  #quote-carousel .carousel-indicators {
     left: 50%;
     width: 60%;
   }
   #quote-carousel .carousel-indicators {
     bottom:                                 -40px;
   }
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height:                             300px;
   }
-  .carousel-control.left {
+  #quote-carousel .carousel-control.left {
     left: 23%;
   }
-  .carousel-control.right {
+  #quote-carousel .carousel-control.right {
     right: 23%;
   }
 }
 
 @media (min-width: 1200px) {
-  .carousel-control.left {
+  #quote-carousel .carousel-control.left {
     left: 29%;
   }
-  .carousel-control.right {
+  #quote-carousel .carousel-control.right {
     right: 29%;
   }
 

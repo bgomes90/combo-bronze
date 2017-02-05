@@ -5893,23 +5893,23 @@ button.close {
   overflow: hidden;
   margin-bottom: 32px; }
 
-.img-responsive {
+#quote-carousel .img-responsive {
   width: 100%;
   height: 100%; }
 
-blockquote {
+#quote-carousel blockquote {
   border-left: none;
   margin: 0;
   font-size: 1em; }
 
-.carousel-control.right {
+#quote-carousel .carousel-control.right {
   left: auto; }
 
-.carousel-control.left {
+#quote-carousel .carousel-control.left {
   right: auto;
   left: 29%; }
 
-.carousel-control.left, .carousel-control.right {
+#quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
   top: 72%;
   background-image: none !important;
   filter: none !important;
@@ -5919,25 +5919,30 @@ blockquote {
   margin: 40px auto 0px;
   display: block; }
 
-.testimonial-content {
+#quote-carousel .testimonial-content {
   font-family: "Britannic-Bold";
   text-align: center;
   color: #f4f4f4;
   margin: 0 auto;
   width: 80%; }
 
-.testimonial-author {
+#quote-carousel .testimonial-author {
   text-transform: uppercase;
   font-family: "Roboto-Black"; }
 
-.testimonial-author-place {
+#quote-carousel .testimonial-author-place {
   text-transform: uppercase;
   color: #979c9f;
   font-size: 0.9em;
   font-family: "Roboto-Light"; }
 
+#quote-carousel .carousel-inner .item,
+#quote-carousel .carousel-inner .item img {
+  width: 100%;
+  height: auto; }
+
 @media (min-width: 320px) {
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height: 300px;
     margin-bottom: 50px; }
   #quote-carousel .carousel-control {
@@ -5946,37 +5951,37 @@ blockquote {
     margin-top: 0px; }
   .icon-inverted-commas {
     margin: 10px auto 0px; }
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size: 0.8em; }
-  .carousel-indicators {
+  #quote-carousel .carousel-indicators {
     left: 30%;
     width: 100%; }
   #quote-carousel .carousel-indicators {
     bottom: -100px; }
-  .carousel-control.left {
+  #quote-carousel .carousel-control.left {
     left: 5%; }
-  .carousel-control.right {
+  #quote-carousel .carousel-control.right {
     right: 5%; } }
 
 @media (min-width: 480px) {
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height: 250px;
     margin-bottom: 50px; }
   #quote-carousel .carousel-control {
     margin-top: 75px; }
   .icon-inverted-commas {
     margin: 30px auto 20px; }
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size: 0.9em; } }
 
 @media (min-width: 660px) {
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size: 1em; } }
 
 @media (min-width: 768px) {
   #quote-carousel .carousel-control {
     margin-top: 80px; }
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height: 275px; } }
 
 @media (min-width: 992px) {
@@ -5986,24 +5991,24 @@ blockquote {
     margin-top: 25px; }
   .icon-inverted-commas {
     margin: 40px auto 0px; }
-  .testimonial-content {
+  #quote-carousel .testimonial-content {
     font-size: 1em; }
-  .carousel-indicators {
+  #quote-carousel .carousel-indicators {
     left: 50%;
     width: 60%; }
   #quote-carousel .carousel-indicators {
     bottom: -40px; }
-  .carousel-inner {
+  #quote-carousel .carousel-inner {
     min-height: 300px; }
-  .carousel-control.left {
+  #quote-carousel .carousel-control.left {
     left: 23%; }
-  .carousel-control.right {
+  #quote-carousel .carousel-control.right {
     right: 23%; } }
 
 @media (min-width: 1200px) {
-  .carousel-control.left {
+  #quote-carousel .carousel-control.left {
     left: 29%; }
-  .carousel-control.right {
+  #quote-carousel .carousel-control.right {
     right: 29%; } }
 
 @font-face {
@@ -6064,7 +6069,9 @@ blockquote {
 .title-header {
   font-family: "Lato-Italic";
   color: #f4f4f4;
-  text-align: center; }
+  position: absolute;
+  z-index: 20;
+  top: 0; }
 
 .about-us-title {
   font-family: "MyriadPro-Regular";
@@ -6297,10 +6304,9 @@ blockquote {
     margin-top: 30px; }
   .margin-b30-10 {
     margin-bottom: 10px; }
-  .home {
-    background-image: url("../img/header-img660.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  .home,
+  .home .carousel.slide,
+  .home .carousel-inner img {
     width: 100%;
     height: 560px; }
   .tour {
@@ -6351,10 +6357,9 @@ blockquote {
     margin-top: 8px; }
   .col-tour {
     padding: 4px 4px 30px; }
-  .home {
-    background-image: url("../img/header-img992.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  .home,
+  .home .carousel.slide,
+  .home .carousel-inner {
     width: 100%;
     height: 670px; }
   .tour {
@@ -6387,8 +6392,9 @@ blockquote {
     padding: 10px 0px; } }
 
 @media (min-width: 992px) {
-  .home {
-    background-image: url("../img/header-img1.png");
+  .home,
+  .home .carousel.slide,
+  .home .carousel-inner img {
     width: 100%;
     height: 662px; }
   .margin-t60-15 {
@@ -6422,10 +6428,9 @@ blockquote {
     height: 110px; } }
 
 @media (min-width: 1200px) {
-  .home {
-    background-image: url("../img/header-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  .home,
+  .home .carousel.slide,
+  .home .carousel-inner img {
     width: 100%;
     height: 662px; }
   .play {
@@ -6440,28 +6445,25 @@ blockquote {
     width: 100%;
     height: 150px; } }
 
-.header-box {
-  width: 100%;
-  height: 80px;
+.header-box .header {
   position: fixed;
   z-index: 999;
-  text-align: right; }
-  .header-box .header {
-    background-color: transparent;
-    text-transform: uppercase;
-    list-style: none; }
-    .header-box .header li {
-      padding: 30px 11px;
-      display: inline-block; }
-      .header-box .header li .menu-item {
-        color: white; }
-        .header-box .header li .menu-item:hover, .header-box .header li .menu-item:active, .header-box .header li .menu-item.active {
-          color: #00b3e0;
-          text-decoration: none; }
-    .header-box .header .glyphicon {
-      color: white;
-      font-size: 1.5em;
-      margin-left: 30px; }
+  right: 50px;
+  background-color: transparent;
+  text-transform: uppercase;
+  list-style: none; }
+  .header-box .header li {
+    padding: 30px 11px;
+    display: inline-block; }
+    .header-box .header li .menu-item {
+      color: white; }
+      .header-box .header li .menu-item:hover, .header-box .header li .menu-item:active, .header-box .header li .menu-item.active {
+        color: #00b3e0;
+        text-decoration: none; }
+  .header-box .header .glyphicon {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 30px; }
 
 @media (min-width: 320px) {
   .menu-responsive {

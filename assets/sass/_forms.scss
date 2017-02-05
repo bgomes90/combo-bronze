@@ -1,7 +1,10 @@
 .title-header {
   font-family:                      "Lato-Italic";
   color:                            $snow;
-  text-align:                       center;
+  // text-align:                       center;
+  position: absolute;
+  z-index: 20;
+  top: 0;
 }
 
 .about-us-title {
