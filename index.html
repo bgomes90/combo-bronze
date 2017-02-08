@@ -14,61 +14,54 @@
 </head>
 <body>
   <header>
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="container">
-          <ul class="header menu-responsive" id="menu-responsive">
-            <li role="presentation" class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-align-justify"></span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-right">
-                <li role="presentation">
-                  <a class="menu-item active" href="#home">home</a>
-                </li>
-                <li role="presentation">
-                  <a class="menu-item" href="#about">sobre nós</a>
-                </li>
-                <li role="presentation">
-                  <a class="menu-item" href="#band">a banda</a>
-                </li>
-                <li role="presentation">
-                  <a class="menu-item" href="#tour">agenda</a>
-                </li>
-                <li role="presentation">
-                  <a class="menu-item" href="#partner-testimonial">parceiros</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="header menu-bar" id="menu-bar">
-            <li role="presentation">
-              <a class="menu-item active" href="#home">home</a>
-            </li>
-            <li role="presentation">
-              <a class="menu-item" href="#about">sobre nós</a>
-            </li>
-            <li role="presentation">
-              <a class="menu-item" href="#band">a banda</a>
-            </li>
-            <li role="presentation">
-              <a class="menu-item" href="#tour">agenda</a>
-            </li>
-            <li role="presentation">
-              <a class="menu-item" href="#partner-testimonial">parceiros</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
+    <ul class="header menu-responsive" id="menu-responsive">
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li role="presentation">
+            <a class="menu-item active" href="#home">home</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#about">sobre nós</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#band">a banda</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#tour">agenda</a>
+          </li>
+          <li role="presentation">
+            <a class="menu-item" href="#partner-testimonial">parceiros</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="header menu-bar" id="menu-bar">
+      <li role="presentation">
+        <a class="menu-item active" href="#home">home</a>
+      </li>
+      <li role="presentation">
+        <a class="menu-item" href="#about">sobre nós</a>
+      </li>
+      <li role="presentation">
+        <a class="menu-item" href="#band">a banda</a>
+      </li>
+      <li role="presentation">
+        <a class="menu-item" href="#tour">agenda</a>
+      </li>
+      <li role="presentation">
+        <a class="menu-item" href="#partner-testimonial">parceiros</a>
+      </li>
+    </ul>
   </header>
 
 
   <section id="home" class="home">
     <div id="carousel-example-generic" class="carousel slide no-margin" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
+      <ol class="carousel-indicators carousel-home">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -79,23 +72,23 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner no-margin" role="listbox">
         <div class="item active">
-          <img src="assets/img/home5.png" alt="...">
+          <img src="assets/img/home5.jpg" alt="...">
           <div class="carousel-caption"></div>
         </div>
         <div class="item">
-          <img src="assets/img/home2.png" alt="...">
+          <img src="assets/img/home2.jpg" alt="...">
           <div class="carousel-caption"></div>
         </div>
         <div class="item">
-          <img src="assets/img/home3.png" alt="...">
+          <img src="assets/img/home3.jpg" alt="...">
           <div class="carousel-caption"></div>
         </div>
         <div class="item">
-          <img src="assets/img/home4.png" alt="...">
+          <img src="assets/img/home4.jpg" alt="...">
           <div class="carousel-caption"></div>
         </div>
         <div class="item">
-          <img src="assets/img/home1.png" alt="...">
+          <img src="assets/img/home1.jpg" alt="...">
           <div class="carousel-caption"></div>
         </div>
 
@@ -118,7 +111,7 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="startchange">
     <div class="row row-gray row-fix">
       <div class="col-sm-6 col-md-4 no-padding">
         <img class="image-home" src="assets/img/phone.png" alt="">
@@ -266,8 +259,8 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a class="btn btn-white margin-t80-30" href="#">
-          agenda completa
+        <a class="btn btn-white margin-t80-30 margin-btn-white" href="#">
+          nossa página
         </a>
       </div>
     </div>

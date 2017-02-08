@@ -1,9 +1,27 @@
-.header {
+header {
   position:                         fixed;
   z-index:                          999;
+  width:                            100%;
+}
+.header {
+  &.menu-bar {
+    width:                          100%;
+    text-align:                     right;
+    padding-right:                  55px;
+    background-color:               transparent;
+    transition:                     0.3s;
+    &.scrolling {
+      background:                     linear-gradient(to bottom, #020202 100%, #FFFFFF 0%) !important;
+      // background:                     linear-gradient(to bottom,#020202 -10%,#FFF 102%)!important;
+      opacity:                        0.8;
+      transition:                     0.3s;
+    }
+  }
+  &.menu-responsive {
+    @include                        padding(15px);
+    text-align:                     right;
+  }
   // text-align: right;
-  right:                            50px;
-  background-color:                 transparent;
   text-transform:                   uppercase;
   list-style:                       none;
   display:                          inline-block;
@@ -27,10 +45,6 @@
     margin-left:                    30px;
   }
 }
-  // &.scrolling {
-  //   background: linear-gradient(to bottom, #020202 100%, #FFFFFF 0%);
-  //   opacity: 0.8;
-  // }
 
 
 
@@ -41,12 +55,12 @@
       background:                   #FFF;
       opacity:                      0.7;
       .menu-item {
-        color:                        black;
+        color:                      black;
         &:hover,
         &:active,
         &.active {
-          color:                      $blue;
-          text-decoration:            none;
+          color:                    $blue;
+          text-decoration:          none;
         }
       }
     }

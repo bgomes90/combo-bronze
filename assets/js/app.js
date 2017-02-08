@@ -1,4 +1,21 @@
 $(document).ready(function(){
+  // var scroll_start = 0;
+  // var startchange = $('.startchange');
+  // var offset = startchange.offset();
+  // if (startchange.length){
+    $(document).scroll(function() {
+      // scroll_start = $('html, body').scrollTop();
+      if($(document).scrollTop() > 80) {
+        console.log('oi');
+        // $("header .header.menu-bar").animate({height: '80px'}, 'slow').css('background', 'linear-gradient(to bottom, #020202 100%, #FFFFFF 0%)');
+        $(".header.menu-bar").addClass('scrolling');
+      } else {
+        // $("header .header.menu-bar").css('background', 'transparent');
+        $(".header.menu-bar").removeClass('scrolling');
+      }
+    });
+  // }
+
   $("#member-1").on('mouseover', function(){
        $('#member-1 p').text('Vocal');
    }).on('mouseleave', function(){
@@ -44,3 +61,12 @@ $(document).ready(function(){
     $('.social-item.utube a img').attr('src', 'assets/img/youtube.svg');
   });
 });
+
+// $(window).scroll(function() {
+//     var scroll = $(window).scrollTop();
+//     if (scroll >= 80) {
+//         $("header .header .menu-bar").addClass("scrolling");
+//     } else {
+//         $("header .header .menu-bar").removeClass("scrolling");
+//     }
+// });
