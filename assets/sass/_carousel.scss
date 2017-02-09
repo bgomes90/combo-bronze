@@ -64,15 +64,19 @@
 
 #quote-carousel .carousel-control.right {
   left: auto;
+  & .glyphicon-menu-right {
+    float: left;
+  }
 }
 
 #quote-carousel .carousel-control.left {
   right: auto;
-  left: 29%;
+  & .glyphicon-menu-left {
+    float: right;
+  }
 }
 
 #quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
-  top: 72%;
   background-image:none !important;
   filter:none !important;
   z-index: 999;
@@ -138,10 +142,13 @@
     bottom:                                 -100px;
   }
   #quote-carousel .carousel-control.left {
-    left: 5%;
+    left: 0%;
   }
   #quote-carousel .carousel-control.right {
-    right: 5%;
+    right: 0%;
+  }
+  #quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
+    top: 92%;
   }
 }
 
@@ -159,11 +166,26 @@
   #quote-carousel .testimonial-content {
     font-size:                              0.9em;
   }
+  #quote-carousel .carousel-control.left {
+    left: 15%;
+  }
+  #quote-carousel .carousel-control.right {
+    right: 15%;
+  }
+  #quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
+    top: 72%;
+  }
 }
 
 @media (min-width: 660px) {
   #quote-carousel .testimonial-content {
     font-size:                              1em;
+  }
+  #quote-carousel .carousel-control.left {
+    left: 18%;
+  }
+  #quote-carousel .carousel-control.right {
+    right: 18%;
   }
 }
 
@@ -173,6 +195,12 @@
   }
   #quote-carousel .carousel-inner {
     min-height:                             275px;
+  }
+  #quote-carousel .carousel-control.left {
+    left: 20%;
+  }
+  #quote-carousel .carousel-control.right {
+    right: 20%;
   }
 }
 
@@ -209,12 +237,13 @@
 
 @media (min-width: 1200px) {
   #quote-carousel .carousel-control.left {
-    left: 29%;
+    left: 27%;
   }
   #quote-carousel .carousel-control.right {
-    right: 29%;
+    right: 27%;
   }
   .carousel-home {
     margin-bottom: 100px;
   }
+
 }

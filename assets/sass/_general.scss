@@ -7,27 +7,27 @@
 }
 
 .row-fix {
-  margin: 0px;
+  margin:                     0px;
 }
 
 .no-margin {
-  margin: 0px;
+  margin:                     0px;
 }
 
 .margin-t60 {
-  margin-top: 60px;
+  margin-top:                 60px;
 }
 
 .margin-t80 {
-  margin-top: 80px;
+  margin-top:                 80px;
 }
 
 .margin-b30 {
-  margin-bottom: 30px;
+  margin-bottom:              30px;
 }
 
 .margin-b60 {
-  margin-bottom: 60px;
+  margin-bottom:              60px;
 }
 
 .image-home {
@@ -38,13 +38,10 @@
 
 .tour {
   width: 100%;
-  height: 662px;
 }
 
 .partner-testimonial {
-  background-image:url("../img/img-depoiment.png");
   width: 100%;
-  height: 431px;
   position: relative;
 }
 
@@ -157,6 +154,7 @@
   .tour {
     background-image:               url("../img/img-tour660.png");
     background-repeat:              no-repeat;
+    height:                         665px;
   }
   .partner {
     height:                         660px;
@@ -186,9 +184,20 @@
       @include                      padding(14px 0px);
     }
   }
+  .social {
+    .social-line {
+      .social-item {
+        margin:                     0 10px;
+      }
+    }
+  }
   .img-band {
     width:                          100%;
     height:                         110px;
+  }
+  .partner-testimonial {
+    background-image:url("../img/img-depoiment.png");
+    height: 431px;
   }
 }
 
@@ -212,7 +221,6 @@
     height:                         960px;
   }
   .img-band {
-    width:                          100%;
     height:                         160px;
   }
 }
@@ -249,7 +257,6 @@
     height:                         1320px;
   }
   .img-band {
-    width:                          100%;
     height:                         220px;
   }
 }
@@ -268,8 +275,14 @@
     height:                         680px;
   }
   .img-band {
-    width:                          100%;
     height:                         170px;
+  }
+  .social {
+    .social-line {
+      .social-item {
+        margin:                     0;
+      }
+    }
   }
 }
 
@@ -300,6 +313,7 @@
   }
   .tour {
     background-image:url("../img/img-tour.png");
+    padding: 54px 0px;
   }
   .play {
     top: 35%;
@@ -327,7 +341,6 @@
     height:                         220px;
   }
   .img-band {
-    width:                          100%;
     height:                         110px;
   }
 }
@@ -356,7 +369,6 @@
     height:                         300px;
   }
   .img-band {
-    width:                          100%;
     height:                         150px;
   }
   .margin-btn-white {
@@ -371,13 +383,23 @@
     width: 100%;
     height: auto;
   }
-.tour {
+  .tour {
     background-image:url("../img/img-tour.png");
+    width: 100%;
+    height: 720px;
+  }
+  .partner {
+    height:                         460px;
+  }
+  .img-band {
+    height:                         230px;
+  }
+  .partner-testimonial {
     width: 100%;
     height: auto;
   }
   .partner-testimonial {
-    width: 100%;
+    background-image:url("../img/img-depoiment1400.png");
     height: auto;
   }
 }

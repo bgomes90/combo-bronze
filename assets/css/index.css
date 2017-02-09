@@ -5904,13 +5904,15 @@ button.close {
 
 #quote-carousel .carousel-control.right {
   left: auto; }
+  #quote-carousel .carousel-control.right .glyphicon-menu-right {
+    float: left; }
 
 #quote-carousel .carousel-control.left {
-  right: auto;
-  left: 29%; }
+  right: auto; }
+  #quote-carousel .carousel-control.left .glyphicon-menu-left {
+    float: right; }
 
 #quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
-  top: 72%;
   background-image: none !important;
   filter: none !important;
   z-index: 999; }
@@ -5959,9 +5961,11 @@ button.close {
   #quote-carousel .carousel-indicators {
     bottom: -100px; }
   #quote-carousel .carousel-control.left {
-    left: 5%; }
+    left: 0%; }
   #quote-carousel .carousel-control.right {
-    right: 5%; } }
+    right: 0%; }
+  #quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
+    top: 92%; } }
 
 @media (min-width: 480px) {
   #quote-carousel .carousel-inner {
@@ -5972,17 +5976,31 @@ button.close {
   .icon-inverted-commas {
     margin: 30px auto 20px; }
   #quote-carousel .testimonial-content {
-    font-size: 0.9em; } }
+    font-size: 0.9em; }
+  #quote-carousel .carousel-control.left {
+    left: 15%; }
+  #quote-carousel .carousel-control.right {
+    right: 15%; }
+  #quote-carousel .carousel-control.left, #quote-carousel .carousel-control.right {
+    top: 72%; } }
 
 @media (min-width: 660px) {
   #quote-carousel .testimonial-content {
-    font-size: 1em; } }
+    font-size: 1em; }
+  #quote-carousel .carousel-control.left {
+    left: 18%; }
+  #quote-carousel .carousel-control.right {
+    right: 18%; } }
 
 @media (min-width: 768px) {
   #quote-carousel .carousel-control {
     margin-top: 80px; }
   #quote-carousel .carousel-inner {
-    min-height: 275px; } }
+    min-height: 275px; }
+  #quote-carousel .carousel-control.left {
+    left: 20%; }
+  #quote-carousel .carousel-control.right {
+    right: 20%; } }
 
 @media (min-width: 992px) {
   #quote-carousel .carousel-control {
@@ -6007,9 +6025,9 @@ button.close {
 
 @media (min-width: 1200px) {
   #quote-carousel .carousel-control.left {
-    left: 29%; }
+    left: 27%; }
   #quote-carousel .carousel-control.right {
-    right: 29%; }
+    right: 27%; }
   .carousel-home {
     margin-bottom: 100px; } }
 
@@ -6237,13 +6255,10 @@ button.close {
   position: relative; }
 
 .tour {
-  width: 100%;
-  height: 662px; }
+  width: 100%; }
 
 .partner-testimonial {
-  background-image: url("../img/img-depoiment.png");
   width: 100%;
-  height: 431px;
   position: relative; }
 
 .image-tour {
@@ -6311,7 +6326,8 @@ button.close {
     height: auto; }
   .tour {
     background-image: url("../img/img-tour660.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    height: 665px; }
   .partner {
     height: 660px; }
   .play {
@@ -6332,9 +6348,14 @@ button.close {
     .item-tour .local-tour {
       height: 79px;
       padding: 14px 0px; }
+  .social .social-line .social-item {
+    margin: 0 10px; }
   .img-band {
     width: 100%;
-    height: 110px; } }
+    height: 110px; }
+  .partner-testimonial {
+    background-image: url("../img/img-depoiment.png");
+    height: 431px; } }
 
 @media (min-width: 480px) {
   .margin-t80-30 {
@@ -6349,7 +6370,6 @@ button.close {
   .partner {
     height: 960px; }
   .img-band {
-    width: 100%;
     height: 160px; } }
 
 @media (min-width: 660px) {
@@ -6367,7 +6387,6 @@ button.close {
   .partner {
     height: 1320px; }
   .img-band {
-    width: 100%;
     height: 220px; } }
 
 @media (min-width: 768px) {
@@ -6379,8 +6398,9 @@ button.close {
   .partner {
     height: 680px; }
   .img-band {
-    width: 100%;
-    height: 170px; } }
+    height: 170px; }
+  .social .social-line .social-item {
+    margin: 0; } }
 
 @media (min-width: 886px) {
   .item-tour .data-tour {
@@ -6394,7 +6414,8 @@ button.close {
   .margin-b30-10 {
     margin-bottom: 30px; }
   .tour {
-    background-image: url("../img/img-tour.png"); }
+    background-image: url("../img/img-tour.png");
+    padding: 54px 0px; }
   .play {
     top: 35%;
     left: 44%;
@@ -6414,7 +6435,6 @@ button.close {
   .partner {
     height: 220px; }
   .img-band {
-    width: 100%;
     height: 110px; } }
 
 @media (min-width: 1200px) {
@@ -6432,7 +6452,6 @@ button.close {
   .partner {
     height: 300px; }
   .img-band {
-    width: 100%;
     height: 150px; }
   .margin-btn-white {
     margin-bottom: 54px; } }
@@ -6446,9 +6465,16 @@ button.close {
   .tour {
     background-image: url("../img/img-tour.png");
     width: 100%;
-    height: auto; }
+    height: 720px; }
+  .partner {
+    height: 460px; }
+  .img-band {
+    height: 230px; }
   .partner-testimonial {
     width: 100%;
+    height: auto; }
+  .partner-testimonial {
+    background-image: url("../img/img-depoiment1400.png");
     height: auto; } }
 
 header {
