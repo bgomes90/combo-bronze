@@ -37,3 +37,13 @@
     color:                              $dark-asphalt;
   }
 }
+
+.btn-download {
+  height:                               110px;
+  background:                           transparent;
+  border:                               none;
+  color:                                $snow;
+  @include                              padding(0px 35px);
+  font-size:                            0.9em;
+  font-style:                           italic;
+}

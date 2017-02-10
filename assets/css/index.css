@@ -5817,7 +5817,7 @@ button.close {
 .header {
   font-weight: bold; }
 
-.btn-white, .footer .img-combo {
+.btn-white, .footer .glyphicon-save {
   margin: 0 auto;
   display: block; }
 
@@ -5854,6 +5854,15 @@ button.close {
     transition: 0.3s;
     background: #f4f4f4;
     color: #1f2533; }
+
+.btn-download {
+  height: 110px;
+  background: transparent;
+  border: none;
+  color: #f4f4f4;
+  padding: 0px 35px;
+  font-size: 0.9em;
+  font-style: italic; }
 
 #quote-carousel {
   margin-top: 25px;
@@ -6069,19 +6078,31 @@ button.close {
   .footer .copyright {
     font-family: "Roboto-Thin";
     color: #f4f4f4;
-    margin-bottom: 0px;
-    position: absolute;
-    bottom: 0px; }
+    margin-bottom: 0px; }
+  .footer .info-footer {
+    color: #f4f4f4;
+    text-align: center; }
+  .footer .logo-box {
+    width: 200px;
+    height: 110px;
+    border: 1px dashed #f4f4f4;
+    float: right;
+    margin-right: 5px;
+    margin-top: 9px; }
+  .footer .glyphicon-save {
+    font-size: 1.5em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    color: black;
+    padding: 5px 0px 3px 1.5px;
+    margin-top: 12px; }
 
 @media (min-width: 320px) {
   .copyright {
     position: relative !important;
     text-align: center; } }
-
-@media (min-width: 660px) {
-  .copyright {
-    position: absolute !important;
-    right: 20px; } }
 
 @media (min-width: 992px) {
   right: 0; }
@@ -6229,6 +6250,9 @@ button.close {
 .no-padding, .members-name {
   padding: 0px; }
 
+.padding-30 {
+  padding: 30px 0px; }
+
 .row-fix {
   margin: 0px; }
 
@@ -6242,6 +6266,9 @@ button.close {
 
 .margin-t80 {
   margin-top: 80px; }
+
+.margin-b10 {
+  margin-bottom: 10px; }
 
 .margin-b30 {
   margin-bottom: 30px; }

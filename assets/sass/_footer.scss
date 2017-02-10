@@ -2,7 +2,7 @@
   height: 150px;
   background-color: #000;
   .img-combo {
-    @extend %center;
+    // @extend %center;
     width: 128px;
     height: auto;
   }
@@ -10,8 +10,31 @@
     font-family: "Roboto-Thin";
     color: $snow;
     margin-bottom: 0px;
-    position: absolute;
-    bottom: 0px;
+    // position: absolute;
+    // bottom: 0px;
+  }
+  .info-footer {
+    color: $snow;
+    text-align: center;
+  }
+  .logo-box {
+    width: 200px;
+    height: 110px;
+    border: 1px dashed $snow;
+    float: right;
+    margin-right: 5px;
+    margin-top: 9px;
+  }
+  .glyphicon-save {
+    font-size: 1.5em;
+    @extend %center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $snow;
+    color: black;
+    @include padding(5px 0px 3px 1.5px);
+    margin-top: 12px;
   }
 }
 
@@ -24,8 +47,8 @@
 
 @media (min-width: 660px) {
   .copyright {
-    position: absolute !important;
-    right: 20px;
+    // position: absolute !important;
+    // right: 20px;
   }
 }
 

@@ -6,6 +6,10 @@
   @include                    padding(0px);
 }
 
+.padding-30 {
+  @include                    padding(30px 0px);
+}
+
 .row-fix {
   margin:                     0px;
 }
@@ -20,6 +24,10 @@
 
 .margin-t80 {
   margin-top:                 80px;
+}
+
+.margin-b10 {
+  margin-bottom:              10px;
 }
 
 .margin-b30 {
