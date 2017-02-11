@@ -5864,6 +5864,11 @@ button.close {
   font-size: 0.9em;
   font-style: italic; }
 
+@media (min-width: 320px) {
+  .btn-download {
+    margin: 0 auto;
+    display: block; } }
+
 #quote-carousel {
   margin-top: 25px;
   /* Control buttons  */
@@ -6100,12 +6105,47 @@ button.close {
     margin-top: 12px; }
 
 @media (min-width: 320px) {
-  .copyright {
-    position: relative !important;
-    text-align: center; } }
+  .footer {
+    height: 540px; }
+    .footer .copyright {
+      position: relative !important;
+      text-align: center; }
+    .footer .img-combo {
+      margin: 12px auto;
+      display: block; }
+    .footer .logo-box {
+      float: none;
+      margin: 9px auto; } }
+
+@media (min-width: 770px) {
+  .footer {
+    height: 310px; }
+    .footer .line {
+      display: inline-block;
+      text-align: center;
+      margin-left: 20%; } }
 
 @media (min-width: 992px) {
-  right: 0; }
+  .footer {
+    height: 175px; }
+    .footer .row-footer {
+      margin-left: 0 auto;
+      display: block; }
+    .footer .line {
+      display: block;
+      margin: 0; }
+    .footer .img-combo {
+      margin: 0;
+      width: 128px;
+      height: auto; }
+    .footer .logo-box {
+      float: right;
+      margin-right: 5px;
+      margin-top: 9px; } }
+
+@media (min-width: 1200px) {
+  .footer {
+    height: 150px; } }
 
 .title-header {
   font-family: "Lato-Italic";

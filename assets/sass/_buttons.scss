@@ -47,3 +47,10 @@
   font-size:                            0.9em;
   font-style:                           italic;
 }
+
+@media (min-width: 320px) {
+  .btn-download {
+    margin: 0 auto;
+    display: block;
+  }
+}
